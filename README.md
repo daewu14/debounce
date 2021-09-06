@@ -15,6 +15,18 @@ samples, guidance on mobile development, and a full API reference.
 
 ## How to use
 
+add / install on pubspec.yaml
+```
+dependencies:
+  flutter:
+    sdk: flutter
+
+  debounce:
+      git:
+        url: https://github.com/daewu14/debounce.git
+        ref: master
+```
+
 ```
 
 var debounce = Debounce(Duration(seconds: 2));
