@@ -21,7 +21,7 @@ var debounce = Debounce(Duration(seconds: 2));
 
 Widget textField() => TextFormField(
   onChanged: (val) {
-    controller.debounce.call(() {
+    debounce.call(() {
       print("debounce callback $val");
     });
   },
